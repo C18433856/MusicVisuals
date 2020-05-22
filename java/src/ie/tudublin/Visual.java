@@ -34,7 +34,7 @@ public abstract class Visual extends PApplet
 
 	}
 
-	float log2(float f) {
+	protected float log2(float f) {
 		return log(f) / log(2.0f);
 	}
 
@@ -138,5 +138,9 @@ public abstract class Visual extends PApplet
 
 	public AudioPlayer getAudioPlayer() {
 		return ap;
+	}
+
+	public FFT getFFT(){
+		return fft;
 	}
 }
